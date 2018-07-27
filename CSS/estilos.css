@@ -1,0 +1,70 @@
+* {
+margin: 0;
+padding: 0;
+
+}
+a {
+  text-decoration:none;
+  color: white;
+}
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono');
+body {
+  background: url('../img/fondo.png') #000099;
+  font-family: 'Fira Mono', monospace;
+  color: white;
+}
+header h1 {
+  text-align: center;
+}
+.contenedorImg {
+  width: 90%;
+  margin: 2% auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.imagen {
+  width: 47%;
+  margin-bottom: 2%;
+  background-color: orange;
+}
+.imagen img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  opacity: 0.8;
+}
+/* a partir de 500px comienzan las tabletas */
+@media (min-width: 500px) {
+  header h1 {
+    height: 50px;
+    font-size: 45px;
+    color: grey;
+  }
+}
+.imagen img:hover {
+    opacity:1;
+}
+/* imagen.html */
+.grande {
+  margin-bottom: 2%;
+  background-color: orange;
+  margin: 5% auto;
+  width: 100%;
+  object-fit: cover;
+  height: 1000px;
+}
+.grande img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+.link {
+  margin-left: 20%;
+}
+body, html {
+  height: 100%;
+  margin: 0;
+}
+/* fin imagen.html */
